@@ -1,0 +1,146 @@
+$base: 1rem;
+
+//breakpoint
+$breakpoint-md: 992px;
+$breakpoint-sm: 767px;
+
+//color
+// $bg-color: #1e1e1e;
+$light: #fff;
+$gray-100: #f2f2f2;
+$gray-200: #d1d1d1;
+$gray-300: #919191;
+$gray-400: #525252;
+$gray-500: #020202;
+
+$colors: (
+  light: #fff,
+  gray-100: #f2f2f2,
+  gray-200: #d1d1d1,
+  gray-300: #919191,
+  gray-400: #525252,
+  gray-500: #020202,
+);
+
+//font
+$font-size: (
+  1: $base * 7.5,
+  //120
+  2: $base * 5,
+  //80
+  3: $base * 3,
+  //48
+  4: $base * 2.5,
+  //40
+  5: $base * 2,
+  //32
+  6: $base * 1.75,
+  //28
+  7: $base * 1.5,
+  //24
+  8: $base * 1.25,
+  //20
+  9: $base,
+  //16
+  10: $base * 0.875,
+  //14
+  11: $base * 0.75,
+  //12
+);
+
+$flex: (
+  flex-column: (
+    flex-direction,
+    column,
+  ),
+  flex-row: (
+    flex-direction,
+    row,
+  ),
+  justify-content-start: (
+    justify-content,
+    start,
+  ),
+  justify-content-center: (
+    justify-content,
+    center,
+  ),
+  justify-content-end: (
+    justify-content,
+    end,
+  ),
+  justify-content-space-between: (
+    justify-content,
+    space-between,
+  ),
+  align-items-start: (
+    align-items,
+    start,
+  ),
+  align-items-center: (
+    align-items,
+    center,
+  ),
+  align-items-end: (
+    align-items,
+    end,
+  ),
+  flex-grow-1: (
+    flex-grow,
+    1,
+  ),
+  flex-wrap: (
+    flex-wrap,
+    wrap,
+  ),
+  text-left: (
+    text-align,
+    left,
+  ),
+);
+
+//font-weight
+$font-weight: (
+  normal: 400,
+  medium: 700,
+  bold: 900,
+);
+
+//space
+$spaces: (
+  0: 0,
+  1: $base * 0.25,
+  //4
+  2: $base * 0.5,
+  //8
+  3: $base * 0.75,
+  //12
+  4: $base,
+  5: $base * 1.25,
+  //20
+  6: $base * 1.5,
+  //24
+  7: $base * 2,
+  //32
+  8: $base * 2.5,
+  //40
+  9: $base * 3,
+  //48
+  10: $base * 5,
+  //80
+  11: $base * 10,
+  //160
+);
+
+$display: (
+  block: block,
+  inline-block: inline-block,
+  flex: flex,
+  none: none,
+);
+
+//index
+$z-index: (
+  header: 1000,
+  select-menu: 500,
+);

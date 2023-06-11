@@ -1,0 +1,157 @@
+.price {
+  .banner {
+    &-subtitle {
+      width: 49%;
+      margin-left: auto;
+      @include pad {
+        width: 73%;
+      }
+    }
+    .animation {
+      justify-content: start;
+    }
+  }
+  .price-area {
+    .card-wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .card {
+      width: 49%;
+      border: 1px solid $gray-400;
+      border-radius: $base;
+      display: flex;
+      flex-direction: column;
+      @include pad {
+        width: 100%;
+      }
+      &-body {
+        border-bottom: solid 1px $gray-300;
+        padding-bottom: 136px;
+        flex-grow: 1;
+      }
+      &-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      a:hover {
+        overflow: hidden;
+        span {
+          animation: arrow-move 2s infinite;
+        }
+      }
+      @keyframes arrow-move {
+        0% {
+          transform: translate(0px, 0px);
+          opacity: 1;
+        }
+        20% {
+          transform: translate(20px, -20px);
+          opacity: 0;
+        }
+
+        25% {
+          transform: translate(-20px, 20px);
+          opacity: 0;
+        }
+        40% {
+          transform: translate(0px, 0px);
+          opacity: 1;
+        }
+        80% {
+          transform: translate(0px, 0px);
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .rule {
+    .title-group {
+      display: flex;
+      justify-content: space-between;
+      @include pad {
+        flex-direction: column;
+      }
+    }
+    title {
+      width: 33%;
+    }
+    &-list {
+      width: 66%;
+      @include pad {
+        width: 100%;
+      }
+      &-item {
+        border-bottom: solid 1px $gray-400;
+      }
+    }
+  }
+  .faq {
+    .title-group {
+      display: flex;
+      justify-content: space-between;
+      @include pad {
+        flex-direction: column;
+      }
+    }
+    title {
+      width: 33%;
+    }
+    &-list {
+      width: 66%;
+      @include pad {
+        width: 100%;
+      }
+      &-item {
+        border: solid 1px $gray-400;
+        border-radius: $base;
+      }
+      &-title {
+        display: flex;
+        align-items: center;
+      }
+      &-desc {
+        transition: 0.5s;
+        display: none;
+        height: 0;
+        transform: translate(-10px, -10px);
+      }
+      .icon-add {
+        display: block;
+      }
+      .icon-remove {
+        display: none;
+        opacity: 0;
+        transform: scale(0);
+      }
+    }
+    &-list-item--active {
+      .faq-list-desc {
+        display: block;
+        opacity: 0;
+        animation: list-desc 0.5s forwards;
+      }
+      .icon-add {
+        display: none;
+      }
+      .icon-remove {
+        display: block;
+        animation: faq 0.5s forwards;
+      }
+    }
+    @keyframes list-desc {
+      to {
+        opacity: 1;
+        transform: translate(0px, 0px);
+      }
+    }
+    @keyframes faq {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
+}

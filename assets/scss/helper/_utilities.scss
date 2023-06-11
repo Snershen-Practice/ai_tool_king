@@ -1,0 +1,53 @@
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+  @media (max-width: 1296px) {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+}
+
+.btn {
+  padding: 20px 40px;
+  border-radius: $base;
+}
+
+.btn-outline-light {
+  @include btn-outline($light, $gray-500, $light);
+}
+
+.btn-outline-gray {
+  @include btn-outline($gray-500, $light, $gray-100);
+}
+
+.btn-outline-dark {
+  @include btn-outline($gray-500, $light, $gray-500);
+}
+
+.title-lh {
+  line-height: 1.2;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.rounded {
+  border-radius: $base;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.stretched-link {
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

@@ -1,0 +1,33 @@
+@mixin pad {
+  @media (max-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $breakpoint-sm) {
+    @content;
+  }
+}
+
+@mixin btn-outline($color, $bgColor, $border) {
+  font-size: $base;
+  background: $bgColor;
+  border: solid 1px $border;
+  transition: 0.5s;
+  &:hover {
+    background: $color;
+    color: $bgColor;
+  }
+}
+
+@mixin btn($color, $bgColor) {
+  font-size: $base;
+  background: $bgColor;
+  transition: 0.5s;
+  &:hover {
+    opacity: 0.8;
+    background: $color;
+    color: $bgColor;
+  }
+}

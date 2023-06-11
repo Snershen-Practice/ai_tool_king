@@ -1,0 +1,88 @@
+.index {
+  .service {
+    &-title {
+      width: 32%;
+      @include mobile {
+        width: 100%;
+      }
+    }
+    &-subtitle {
+      width: 66%;
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+  .card {
+    border: solid 1px $gray-400;
+    width: 32%;
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  .partner {
+    img {
+      max-width: 200px;
+    }
+    &-line {
+      width: 100%;
+      white-space: nowrap;
+      overflow-x: scroll;
+      position: relative;
+      &::-webkit-scrollbar {
+        appearance: none;
+      }
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100px;
+      }
+      &::before {
+        left: 0;
+        background: linear-gradient(90deg, #000, transparent);
+      }
+      &::after {
+        background: linear-gradient(-90deg, #000, transparent);
+        right: 0;
+      }
+    }
+  }
+
+  .comment {
+    .card {
+      background: rgba(#fff, 0.08);
+      // width: 32%;
+      height: 420px;
+      width: 100%;
+    }
+  }
+}
+
+//swiper
+.swiper {
+  width: 100%;
+  height: 460px;
+  &-pagination {
+    display: none;
+    @include pad {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: $gray-200;
+  }
+  &-pagination-bullet-active {
+    background: $light;
+    width: 12px;
+    height: 12px;
+  }
+}

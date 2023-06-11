@@ -1,0 +1,50 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: map-get($z-index, header);
+  .container {
+    width: 100%;
+  }
+  &-wrapper {
+    border-bottom: solid 1px $light;
+  }
+  .nav {
+    display: flex;
+    @include mobile {
+      position: absolute;
+      background: $gray-500;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      height: calc(100vh - 70px);
+    }
+    &-link {
+      padding: 12px 10px;
+      transition: 0.5s;
+      &:hover {
+        opacity: 0.8;
+      }
+      @include mobile {
+        padding: 0;
+        font-size: $base * 5;
+        font-weight: 700;
+      }
+    }
+  }
+  .logo {
+    width: 245px;
+    height: 40px;
+    text-indent: -100%;
+    overflow: hidden;
+    background: url(../img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    @include pad {
+      width: 150px;
+      height: auto;
+    }
+  }
+}

@@ -1,0 +1,218 @@
+<div class="container">
+  <h2 class="product-title mb-10 mb-sm-7 fs-2 fs-sm-5 fw-bold title-lh text-center">
+    這些超酷的應用，<br class="d-sm-inline-block d-none" />都來自 AI工具王
+  </h2>
+  <label class="search d-flex align-items-center bg-gray-100 py-5 px-8 mb-6 rounded" id="search">
+    <span class="material-symbols-outlined mr-3 text-gray-300"> search </span>
+    <input type="text" placeholder="輸入關鍵字搜尋" for="search" class="input-text" />
+  </label>
+  <div class="form-filter d-flex justify-content-space-between align-items-center flex-wrap">
+    <button id="filter-btn" type="button" class="btn btn-outline-dark d-flex align-items-center">
+      篩選<span class="material-symbols-outlined ml-3 fs-9"> filter_alt </span>
+      <div id="filter-menu" class="filter-menu rounded">
+        <div class="model-list menu-line pb-4">
+          <p class="text-left mt-5 pl-8 fs-11 text-gray-300 fw-medium mb-2">AI模型</p>
+          <ul>
+            <li>
+              <a href="#" class="filter-item filter-item--active"
+                >所有模型 <span class="material-symbols-outlined"> done </span></a
+              >
+            </li>
+            <li>
+              <a href="#" class="filter-item">卡卡<span class="material-symbols-outlined"> done </span></a>
+            </li>
+            <li>
+              <a href="#" class="filter-item">杰杰<span class="material-symbols-outlined"> done </span></a>
+            </li>
+            <li>
+              <a href="#" class="filter-item">琪琪<span class="material-symbols-outlined"> done </span></a>
+            </li>
+            <li>
+              <a href="#" class="filter-item">昊昊<span class="material-symbols-outlined"> done </span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="type-list pb-4">
+          <p class="text-left mt-5 pl-8 fs-11 text-gray-300 fw-medium mb-2">類型</p>
+          <ul>
+            <li>
+              <a href="#" class="filter-item text-gray-500"
+                >所有類型<span class="material-symbols-outlined"> done </span></a
+              >
+            </li>
+            <li>
+              <a href="#" class="filter-item text-gray-500"
+                >篩選項目 1<span class="material-symbols-outlined"> done </span></a
+              >
+            </li>
+            <li>
+              <a href="#" class="filter-item text-gray-500"
+                >篩選項目 2<span class="material-symbols-outlined"> done </span></a
+              >
+            </li>
+            <li>
+              <a href="#" class="filter-item text-gray-500"
+                >篩選項目 3<span class="material-symbols-outlined"> done </span></a
+              >
+            </li>
+            <li>
+              <a href="#" class="filter-item text-gray-500"
+                >篩選項目 4<span class="material-symbols-outlined"> done </span></a
+              >
+            </li>
+            <li>
+              <a href="#" class="filter-item text-gray-500"
+                >篩選項目 5<span class="material-symbols-outlined"> done </span></a
+              >
+            </li>
+            <li>
+              <a href="#" class="filter-item text-gray-500"
+                >篩選項目 6<span class="material-symbols-outlined"> done </span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </button>
+    <ul class="tab d-flex mr-3 mt-sm-4">
+      <li><button href="#" class="tab-item tab-item--active">全部</button></li>
+      <li><button href="#" class="tab-item">聊天</button></li>
+      <li><button href="#" class="tab-item">影像辨識</button></li>
+      <li><button href="#" class="tab-item">翻譯</button></li>
+      <li><button href="#" class="tab-item">行銷</button></li>
+      <li><button href="#" class="tab-item">客服</button></li>
+      <li><button href="#" class="tab-item">生產力</button></li>
+    </ul>
+    <button id="sort-btn" type="button" class="btn btn-outline-gray d-flex align-items-center">
+      由新到舊<span class="material-symbols-outlined ml-3 fs-9"> expand_more </span>
+      <div id="sort-menu" class="sort-menu rounded d-none">
+        <div class="model-list menu-line pb-4">
+          <ul class="mt-5">
+            <li>
+              <a href="#" class="filter-item">由新到舊<span class="material-symbols-outlined"> done </span></a>
+            </li>
+            <li>
+              <a href="#" class="filter-item">由舊到新<span class="material-symbols-outlined"> done </span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </button>
+  </div>
+  <ul class="card-wrapper mt-8 mb-8">
+    <li class="card mb-6 rounded d-flex flex-column">
+      <div class="card-header"><img src="assets/img/tool1.png" alt="" /></div>
+      <div class="card-body px-7 py-5 flex-grow-1">
+        <h3 class="card-title fs-8 mb-3 title-lh fw-bold">Chatbot</h3>
+        <p class="text-gray-300">建立智能化的聊天機器人，解答常見問題、提供客戶支援、收集反饋等。</p>
+      </div>
+      <div class="card-footer">
+        <div class="card-footer-info px-7 py-5">
+          <p class="fw-medium">AI 模型</p>
+          <p>卡卡</p>
+        </div>
+        <div class="card-footer-info px-7 py-5">
+          <p>#聊天</p>
+          <a href="#"><span class="material-symbols-outlined text-gray-500"> share </span></a>
+        </div>
+      </div>
+    </li>
+    <li class="card mb-6 rounded d-flex flex-column">
+      <div class="card-header"><img src="assets/img/tool2.png" alt="" /></div>
+      <div class="card-body px-7 py-5 flex-grow-1">
+        <h3 class="card-title fs-8 mb-3 title-lh fw-bold">Image Recognition Platform</h3>
+        <p class="text-gray-300">專業的圖像識別平台，識別圖像、分類、標記等。</p>
+      </div>
+      <div class="card-footer">
+        <div class="card-footer-info px-7 py-5">
+          <p class="fw-medium">AI 模型</p>
+          <p>杰杰</p>
+        </div>
+        <div class="card-footer-info px-7 py-5">
+          <p>#影像辨識</p>
+          <a href="#"><span class="material-symbols-outlined text-gray-500"> share </span></a>
+        </div>
+      </div>
+    </li>
+    <li class="card mb-6 rounded d-flex flex-column">
+      <div class="card-header"><img src="assets/img/tool3.png" alt="" /></div>
+      <div class="card-body px-7 py-5 flex-grow-1">
+        <h3 class="card-title fs-8 mb-3 title-lh fw-bold">Language Translation API</h3>
+        <p class="text-gray-300">專業的語言翻譯 API，實現文本翻譯功能，支援多種格式的文本。</p>
+      </div>
+      <div class="card-footer">
+        <div class="card-footer-info px-7 py-5">
+          <p class="fw-medium">AI 模型</p>
+          <p>琪琪</p>
+        </div>
+        <div class="card-footer-info px-7 py-5">
+          <p>#翻譯</p>
+          <a href="#"><span class="material-symbols-outlined text-gray-500"> share </span></a>
+        </div>
+      </div>
+    </li>
+    <li class="card mb-6 rounded d-flex flex-column">
+      <div class="card-header"><img src="assets/img/tool4.png" alt="" /></div>
+      <div class="card-body px-7 py-5 flex-grow-1">
+        <h3 class="card-title fs-8 mb-3 title-lh fw-bold">Sentiment Analysis API</h3>
+        <p class="text-gray-300">
+          自動識別文本中的情感傾向，包括正向、負向和中性等。適用於情感分析、社交媒體監控、市場調查等。
+        </p>
+      </div>
+      <div class="card-footer">
+        <div class="card-footer-info px-7 py-5">
+          <p class="fw-medium">AI 模型</p>
+          <p>昊昊</p>
+        </div>
+        <div class="card-footer-info px-7 py-5">
+          <p>#行銷</p>
+          <a href="#"><span class="material-symbols-outlined text-gray-500"> share </span></a>
+        </div>
+      </div>
+    </li>
+    <li class="card mb-6 rounded d-flex flex-column">
+      <div class="card-header"><img src="assets/img/tool5.png" alt="" /></div>
+      <div class="card-body px-7 py-5 flex-grow-1">
+        <h3 class="card-title fs-8 mb-3 title-lh fw-bold">Fraud Detection Platform</h3>
+        <p class="text-gray-300">預防詐騙活動，適用於銀行、金融、電商等。</p>
+      </div>
+      <div class="card-footer">
+        <div class="card-footer-info px-7 py-5">
+          <p class="fw-medium">AI 模型</p>
+          <p>卡卡</p>
+        </div>
+        <div class="card-footer-info px-7 py-5">
+          <p>#客服</p>
+          <a href="#"><span class="material-symbols-outlined text-gray-500"> share </span></a>
+        </div>
+      </div>
+    </li>
+    <li class="card mb-6 rounded d-flex flex-column">
+      <div class="card-header"><img src="assets/img/tool6.png" alt="" /></div>
+      <div class="card-body px-7 py-5 flex-grow-1">
+        <h3 class="card-title fs-8 mb-3 title-lh fw-bold">Voice Assistant SDK</h3>
+        <p class="text-gray-300">通過語音控制應用程式、設備，實現多種功能，例如播放音樂、查詢天氣、發送信息等。</p>
+      </div>
+      <div class="card-footer">
+        <div class="card-footer-info px-7 py-5">
+          <p class="fw-medium">AI 模型</p>
+          <p>杰杰</p>
+        </div>
+        <div class="card-footer-info px-7 py-5">
+          <p>#生產力</p>
+          <a href="#"><span class="material-symbols-outlined text-gray-500"> share </span></a>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <ul class="page-list fw-medium d-flex justify-content-end align-items-center">
+    <li><a href="#" class="page-list-link page-list-link--active">1</a></li>
+    <li><a href="#" class="page-list-link">2</a></li>
+    <li><a href="#" class="page-list-link">3</a></li>
+    <li><a href="#" class="page-list-link">4</a></li>
+    <li><a href="#" class="page-list-link">5</a></li>
+    <li>
+      <a href="#" class="link"><span class="material-symbols-outlined text-gray-500"> keyboard_arrow_right </span></a>
+    </li>
+  </ul>
+</div>
